@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="BioSync Weather: guardi il meteo della tua zona e segni come ti senti, con un tocco. Le note restano sul telefono."
+    />
+    <meta name="theme-color" content="#071A2B" />
+    <title>BioSync Weather — Ogni segnale conta</title>
+    <link rel="icon" href="mark.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,700;1,9..144,560&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenuto">Vai al contenuto</a>
+
+    <header class="bar">
+      <a class="brand" href="#inizio">
+        <img src="mark.png" width="512" height="512" alt="" />
+        <span>BioSync Weather</span>
+      </a>
+      <nav aria-label="Nella pagina">
+        <a href="#tempo">Il tempo</a>
+        <a href="#diario">Il diario</a>
+        <a href="#giorni">I giorni</a>
+        <a href="#fare">Cosa puoi fare</a>
+      </nav>
+    </header>
+
+    <main id="contenuto">
+      <section class="hero" id="inizio">
+        <p class="kicker">Meteo biologico</p>
+        <h1>
+          <span>Ogni</span>
+          <span>segnale</span>
+          <span class="accent">conta.</span>
+        </h1>
+        <p class="lead">
+          Il tempo di oggi.<br />
+          Come ti senti.<br />
+          In un tocco.
+        </p>
+        <a class="down" href="#gesti">Le tre cose da fare</a>
+        <svg class="wave" viewBox="0 0 1440 220" aria-hidden="true">
+          <path
+            d="M-40 150 C 180 30, 380 210, 640 100 S 1040 10, 1520 140"
+            opacity="0.35"
+          />
+          <path d="M-40 168 C 220 70, 460 200, 760 120 S 1180 40, 1520 150" />
+        </svg>
+      </section>
+
+      <section class="gesti" id="gesti" aria-label="Tre gesti">
+        <a href="#tempo">
+          <small>01</small>
+          Che tempo fa
+        </a>
+        <a href="#diario">
+          <small>02</small>
+          Come mi sento
+        </a>
+        <a href="#giorni">
+          <small>03</small>
+          I miei giorni
+        </a>
+      </section>
+
+      <section class="chapter" id="tempo">
+        <p class="num">01</p>
+        <div>
+          <h2>Che tempo fa</h2>
+          <p class="slogan">Pressione. Umidità. Sole.</p>
+          <p class="plain">
+            Nella tua zona, dette in chiaro. Se un dato manca, l’app lo dice.
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter chapter-alt" id="diario">
+        <p class="num">02</p>
+        <div>
+          <h2>Come mi sento</h2>
+          <p class="slogan">Ottimo. Neutro. Sintomi.</p>
+          <p class="plain">
+            Un tocco. La nota resta sul telefono. La rileggi quando vuoi.
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter" id="giorni">
+        <p class="num">03</p>
+        <div>
+          <h2>I miei giorni</h2>
+          <p class="slogan">Oggi, vicino ai tuoi giorni.</p>
+          <p class="plain">
+            Quando le note bastano, un numero ti dice se la pressione di oggi
+            somiglia ai giorni in cui hai segnato sintomi. Descrive le tue
+            note. Non dice come starai.
+          </p>
+        </div>
+      </section>
+
+      <section class="fare" id="fare">
+        <p class="kicker">In parole semplici</p>
+        <h2>Cosa puoi fare</h2>
+        <ol>
+          <li>
+            <strong>Vedere il meteo</strong>
+            <span>Pressione, umidità e sole, nella tua zona.</span>
+          </li>
+          <li>
+            <strong>Segnare la giornata</strong>
+            <span>Ottimo, neutro o sintomi. Un tocco.</span>
+          </li>
+          <li>
+            <strong>Tenere il diario</strong>
+            <span>Le note restano sul telefono.</span>
+          </li>
+          <li>
+            <strong>Leggere il contesto</strong>
+            <span>Compare solo quando c’è abbastanza storia.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="split" aria-label="Gratis e in più">
+        <article>
+          <p class="kicker">Sempre</p>
+          <h2>Con te</h2>
+          <ul>
+            <li>Il meteo della zona</li>
+            <li>Il diario in un tocco</li>
+            <li>Il contesto, quando le note bastano</li>
+            <li>Sonno e ritmo cardiaco, solo se li chiedi tu</li>
+          </ul>
+        </article>
+        <article>
+          <p class="kicker">In più</p>
+          <h2>Quando vuoi</h2>
+          <ul>
+            <li>Un avviso se la pressione sta per calare</li>
+            <li>Il grafico delle tue note accanto al tempo</li>
+            <li>Un consiglio generale sul meteo</li>
+          </ul>
+          <p class="aside">
+            L’avviso parla del tempo. Il grafico descrive le tue note. Il
+            consiglio è generale. Arrivano con l’abbonamento, quando sarà
+            attivo.
+          </p>
+        </article>
+      </section>
+
+      <section class="honest">
+        <p class="demo">Demo</p>
+        <h2>Oggi è un esempio.</h2>
+        <p>
+          La versione che puoi provare adesso mostra meteo e numero inventati,
+          e lo scrive in Home. Le note del diario, quelle sì, restano salvate
+          sul telefono.
+        </p>
+        <p>
+          BioSync Weather ti aiuta a osservare. Non fa diagnosi e non sostituisce
+          un professionista.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <img src="mark.png" width="512" height="512" alt="" />
+      <p>BioSync Weather</p>
+      <p>In preparazione per iPhone e Android.</p>
+    </footer>
+  </body>
+</html>
