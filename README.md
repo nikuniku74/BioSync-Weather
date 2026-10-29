@@ -1,5 +1,6 @@
 # BioSync Weather
 
-Pagina pubblica: https://nikuniku74.github.io/BioSync-Weather/
+Pagina pubblica, sempre in due lingue.
 
-Spiega meteo, diario e giorni con slogan semplici. La versione dell'app descritta qui è una demo.
+- Italiano: https://nikuniku74.github.io/BioSync-Weather/
+- English: https://nikuniku74.github.io/BioSync-Weather/en/

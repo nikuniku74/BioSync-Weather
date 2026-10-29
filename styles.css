@@ -63,10 +63,10 @@ body::before {
   position: sticky;
   top: 0;
   z-index: 3;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "brand nav lang";
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
   gap: 0.65rem 1.5rem;
   padding: 0.85rem var(--pad);
   background: #071a2b;
@@ -74,6 +74,7 @@ body::before {
 }
 
 .brand {
+  grid-area: brand;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -92,9 +93,44 @@ footer img {
 }
 
 nav {
+  grid-area: nav;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 0.35rem 1.15rem;
+}
+
+.lang {
+  grid-area: lang;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.lang a {
+  min-width: 2.7rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.lang a[aria-current="page"] {
+  background: var(--sky);
+  color: var(--navy);
+}
+
+.lang a:hover,
+.lang a:focus-visible {
+  color: var(--sky);
+}
+
+.lang a[aria-current="page"]:hover,
+.lang a[aria-current="page"]:focus-visible {
+  color: var(--navy);
 }
 
 nav a {
@@ -402,8 +438,15 @@ a:focus-visible {
 }
 
 @media (max-width: 720px) {
+  .bar {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "brand lang"
+      "nav nav";
+  }
+
   nav {
-    flex: 1 0 100%;
+    justify-content: flex-start;
   }
 }
 

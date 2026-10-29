@@ -9,6 +9,9 @@
     />
     <meta name="theme-color" content="#071A2B" />
     <title>BioSync Weather — Ogni segnale conta</title>
+    <link rel="alternate" hreflang="it" href="./" />
+    <link rel="alternate" hreflang="en" href="en/" />
+    <link rel="alternate" hreflang="x-default" href="./" />
     <link rel="icon" href="mark.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,6 +35,10 @@
         <a href="#giorni">I giorni</a>
         <a href="#fare">Cosa puoi fare</a>
       </nav>
+      <div class="lang">
+        <a href="./" lang="it" hreflang="it" aria-current="page">IT</a>
+        <a href="en/" lang="en" hreflang="en">EN</a>
+      </div>
     </header>
 
     <main id="contenuto">
@@ -177,5 +184,14 @@
       <p>BioSync Weather</p>
       <p>In preparazione per iPhone e Android.</p>
     </footer>
+    <script>
+      document.querySelectorAll(".lang a").forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          if (!location.hash) return;
+          event.preventDefault();
+          location.href = link.getAttribute("href") + location.hash;
+        });
+      });
+    </script>
   </body>
 </html>
